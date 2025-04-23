@@ -2,6 +2,8 @@
 
 This repository demonstrates how to package [EmulatorJS](https://github.com/EmulatorJS/EmulatorJS) into a Docker image and serve it via Nginx. By default, the project ships with the **TopGear** (SNES) ROM to showcase a working example, but you can easily customize it to run any supported game.
 
+[TopGear](https://github.com/user-attachments/assets/350941b1-3788-4d1d-b1ab-a48054520944)
+
 ## Links
 
 - EmulatorJS website: [https://www.emulatorjs.com/](https://www.emulatorjs.com/)
