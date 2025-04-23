@@ -48,12 +48,12 @@ This multi-stage build does the following:
 2. **Production stage** (Nginx 1.27‑alpine)
    - Cleans Nginx’s default content
    - Copies the built `data/`, `index.html`, and `roms/` into Nginx’s web root
-   - Exposes port 80 and starts Nginx in the foreground
+   - Exposes port 8080 and starts Nginx in the foreground
 
 ## Run the Docker Container
 
 ```bash
-$ docker run -d -p 8080:80 emulatorjs-topgear:latest
+$ docker run -d -p 8080:8080 emulatorjs-topgear:latest
 ```
 
 - Access the emulator at: `http://localhost:8080`

@@ -37,6 +37,9 @@ LABEL maintainer="https://github.com/nelsonwenner"
 # Remove the default Nginx static content so we can replace it with our own
 RUN rm -rf /usr/share/nginx/html/*
 
+# Change the default Nginx configuration to listen on port 8080
+RUN sed -i 's/listen       80;/listen       8080;/' /etc/nginx/conf.d/default.conf
+
 # Copy the generated static files from the builder stage into Nginx's web root:
 # index.html – entry point that initializes EmulatorJS with the correct settings
 COPY --from=builder /app/index.html   /usr/share/nginx/html/
